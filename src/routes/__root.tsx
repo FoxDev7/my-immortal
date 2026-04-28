@@ -24,7 +24,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "TanStack Start Starter",
+				title: "My Immortal",
 			},
 		],
 		links: [
@@ -44,6 +44,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 				<HeadContent />
 			</head>
 			<body>
+				<h1>Hello</h1>
 				{children}
 				<TanStackDevtools
 					config={{
