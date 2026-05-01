@@ -4,12 +4,9 @@ export const Route = createFileRoute("/")({ component: Home });
 
 function Home() {
 	return (
-		<div className="p-8 grow">
-			<main>
-				<h1 className="text-4xl font-bold">My Immortal</h1>
-				<p className="mt-4 text-lg">
-					Edit <code>src/routes/index.tsx</code> to get started.
-				</p>
+		<div className="grow w-full h-full">
+			<main className="w-full h-[calc(100svh-128px)]">
+				<img src="/hero.jpg" alt="Hero Image" className="h-full object-cover"/>
 			</main>
 		</div>
 	);
