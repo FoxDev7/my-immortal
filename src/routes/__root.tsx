@@ -37,7 +37,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 	}),
 	shellComponent: RootDocument,
 });
-
+1
 function RootDocument({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">

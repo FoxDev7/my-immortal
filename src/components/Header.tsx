@@ -1,13 +1,38 @@
 export default function Header() {
+	const navItems = [
+		{
+			id: 1,
+			name: "Home",
+			link: "/",
+		},
+		{
+			id: 2,
+			name: "About",
+			link: "/",
+		},
+	];
+
+	const sns = [
+		{
+			label: "Instagram",
+			href: "https://www.instagram.com",
+		},
+		{
+			label: "Facebook",
+			href: "https://www.facebook.com",
+		},
+	];
+
 	return (
-		<div className="fixed top-0 right-0 left-0 z-50 w-full">
-			<header className="relative z-50 w-full tracking-tighter transition-all duration-300 bg-transparent">
-				<div className="relative mx-auto max-w-7xl px-6">
-					<div className="flex h-16 items-center justify-between gap-8">
-						<h1>Hello!</h1>
-					</div>
-				</div>
-			</header>
-		</div>
+		<header>
+			<div>
+				{/* Logo */}
+				<a href="/">
+					<span>LAN NGUYEN</span>
+				</a>
+			</div>
+
+			<ul></ul>
+		</header>
 	);
 }
