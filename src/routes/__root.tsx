@@ -37,14 +37,14 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 	}),
 	shellComponent: RootDocument,
 });
-1
+1;
 function RootDocument({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
 			<head>
 				<HeadContent />
 			</head>
-			<body>
+			<body className="flex flex-col min-h-screen">
 				<Header />
 				{children}
 				<TanStackDevtools
