@@ -32,5 +32,6 @@
 	"editor.codeActionsOnSave": {
 		"source.organizeImports.biome": "explicit"
 	},
-	"cSpell.words": ["thesvg"]
+	"cSpell.words": ["thesvg"],
+	"cSpell.language": "en,de-DE"
 }
