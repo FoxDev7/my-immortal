@@ -1,5 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
+import Footer from "#/components/Footer";
 import { Separator } from "#/components/ui/separator";
+
+// TODO: Make desktop layout
 
 export const Route = createFileRoute("/")({ component: Home });
 
@@ -83,6 +86,8 @@ function Home() {
 					))}
 				</div>
 			</section>
+
+			<Footer />
 		</div>
 	);
 }
