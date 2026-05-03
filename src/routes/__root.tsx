@@ -6,6 +6,7 @@ import {
 	Scripts,
 } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
+import Footer from "#/components/Footer";
 import Header from "#/components/Header";
 import TanStackQueryDevtools from "../integrations/tanstack-query/devtools";
 import appCss from "../styles.css?url";
@@ -25,7 +26,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "My Immortal",
+				title: "Lan Nguyen Schneiderei",
 			},
 		],
 		links: [
@@ -45,8 +46,11 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 				<HeadContent />
 			</head>
 			<body className="flex flex-col min-h-screen">
-				<Header />
-				<div className="mx-auto w-full flex-1">{children}</div>
+				<div className="flex flex-col md:flex-row">
+					<Header />
+					<div>{children}</div>
+				</div>
+				<Footer />
 				<TanStackDevtools
 					config={{
 						position: "bottom-right",

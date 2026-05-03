@@ -52,7 +52,7 @@ export default function Footer() {
 				<div className="flex items-center gap-4">
 					{sns.map((s) => (
 						<a href={s.href} key={s.label}>
-							<img src={s.iconSource} alt={s.label} />
+							<img src={s.iconSource} alt={s.label} width={24} height={24} />
 						</a>
 					))}
 				</div>
