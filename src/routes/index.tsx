@@ -22,7 +22,8 @@ const contactInfo = [
 
 function Home() {
   return (
-    <div className="grow w-full h-full">
+    <div className="w-full overflow-auto md:w-[calc(100svw-14rem)] h-full">
+      {/* overflow-auto h-[calc(100svh-8rem)] */}
       <section className="w-full h-[calc(100svh-var(--header-h))] md:h-svh">
         <img
           src="https://images.unsplash.com/photo-1509319117193-57bab727e09d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MTV8fGNsb3RoZXN8ZW58MHx8fHwxNzc3NjU4NTkzfDA&ixlib=rb-4.1.0&q=80&w=1080"
@@ -35,9 +36,7 @@ function Home() {
       <section className="w-[calc(100%-var(--space-hor)*2)] flex flex-col gap-15 my-(--space-vrt) mx-auto">
         {/* Headline */}
         <div>
-          <h1 className="flex">
-            <span>Änderungsschneiderei</span>
-          </h1>
+          <h1 className="flex text-2xl md:text-3xl">Änderungsschneiderei</h1>
         </div>
 
         {/* Introduction */}
