@@ -1,3 +1,5 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -21,6 +23,8 @@ body {
 
 @theme inline {
     --font-heading: var(--font-sans);
+    --font-playfair: "Playfair Display", serif;
+    --font-inria: "Inria", serif;
     --font-sans: "Geist Variable", sans-serif;
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
@@ -60,6 +64,7 @@ body {
     --radius-2xl: calc(var(--radius) * 1.8);
     --radius-3xl: calc(var(--radius) * 2.2);
     --radius-4xl: calc(var(--radius) * 2.6);
+    --color-dark-shadow: var(--dark-shadow);
 }
 
 :root {
@@ -102,6 +107,9 @@ body {
     --space-vrt: 120px;
     --space-hor: 20px;
     --header-h: 128px;
+
+    /* Shadow layer */
+    --dark-shadow: #3e4535;
 }
 
 .dark {
@@ -146,6 +154,6 @@ body {
         @apply bg-background text-foreground;
     }
     html {
-        @apply font-sans;
+        @apply font-playfair;
     }
 }
