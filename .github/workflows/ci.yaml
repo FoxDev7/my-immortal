@@ -27,7 +27,9 @@ jobs:
 
       - name: Install Dependencies
         run: pnpm install
-      - name: Formatting and Linting
-        run: pnpm run check
-
-  
+      - name: Formatting
+        run: pnpm run format --write
+      - name: Linting
+        run: pnpm run lint --write
+      - name: Check
+        run: pnpm run check --write
