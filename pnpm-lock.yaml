@@ -14,6 +14,12 @@ importers:
       '@fontsource-variable/geist':
         specifier: ^5.2.8
         version: 5.2.8
+      '@fontsource-variable/noto-sans':
+        specifier: ^5.2.10
+        version: 5.2.10
+      '@fontsource-variable/playfair-display':
+        specifier: ^5.2.8
+        version: 5.2.8
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.2.4(vite@8.0.10(@types/node@22.19.17)(esbuild@0.27.3)(jiti@2.6.1))
@@ -63,8 +69,8 @@ importers:
         specifier: ^19.2.0
         version: 19.2.5(react@19.2.5)
       shadcn:
-        specifier: ^4.5.0
-        version: 4.5.0(@types/node@22.19.17)(typescript@6.0.3)
+        specifier: ^4.6.0
+        version: 4.6.0(@types/node@22.19.17)(typescript@6.0.3)
       tailwind-merge:
         specifier: ^3.5.0
         version: 3.5.0
@@ -625,6 +631,12 @@ packages:
 
   '@fontsource-variable/geist@5.2.8':
     resolution: {integrity: sha512-cJ6m9e+8MQ5dCYJsLylfZrgBh6KkG4bOLckB35Tr9J/EqdkEM6QllH5PxqP1dhTvFup+HtMRPuz9xOjxXJggxw==}
+
+  '@fontsource-variable/noto-sans@5.2.10':
+    resolution: {integrity: sha512-wyFgKkFu7jki5kEL8qv7avjQ8rxHX0J/nhLWvbR9T0hOH1HRKZEvb9EW9lMjZfWHHfEzKkYf5J+NadwgCS7TXA==}
+
+  '@fontsource-variable/playfair-display@5.2.8':
+    resolution: {integrity: sha512-ZzVIXPOrL85yyOvZYoBzUszIJM+xKkHqni4IYn2CVLaGQQdJR8sBeC8yFNgjxSJ7ludTwta8qpULeOFuk5X75A==}
 
   '@hono/node-server@1.19.14':
     resolution: {integrity: sha512-GwtvgtXxnWsucXvbQXkRgqksiH2Qed37H9xHZocE5sA3N8O8O8/8FA3uclQXxXVzc9XBZuEOMK7+r02FmSpHtw==}
@@ -3545,8 +3557,8 @@ packages:
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
-  shadcn@4.5.0:
-    resolution: {integrity: sha512-ZpNOz7IMI5aezbMEWNxBvl2aJ1ek6NuAMqpL/FUnk5IuRxERl8ohYEnqqAmhPOcur8RbGuCoqTZLQ3Oi4Xkf8A==}
+  shadcn@4.6.0:
+    resolution: {integrity: sha512-4XeMwFf8ZZxmqQQp+U+Nsq2M+cY4Da8Joo/EaMdHVc4uVuWSTJoeidlZ3gDjyxXCjYB1FLcxYwR4lYQAH8emOg==}
     hasBin: true
 
   sharp@0.34.5:
@@ -4520,6 +4532,10 @@ snapshots:
   '@floating-ui/utils@0.2.11': {}
 
   '@fontsource-variable/geist@5.2.8': {}
+
+  '@fontsource-variable/noto-sans@5.2.10': {}
+
+  '@fontsource-variable/playfair-display@5.2.8': {}
 
   '@hono/node-server@1.19.14(hono@4.12.15)':
     dependencies:
@@ -7479,7 +7495,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shadcn@4.5.0(@types/node@22.19.17)(typescript@6.0.3):
+  shadcn@4.6.0(@types/node@22.19.17)(typescript@6.0.3):
     dependencies:
       '@babel/core': 7.29.0
       '@babel/parser': 7.29.2
