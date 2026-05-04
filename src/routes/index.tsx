@@ -92,7 +92,8 @@ function Home() {
 				<div>
 					<h2 className="flex flex-col items-center text-3xl">Contact</h2>
 				</div>
-				<Separator />
+
+				<Separator className="bg-dark-shadow md:hidden" />
 
 				<div className="flex flex-col gap-4 md:mx-auto   md:w-lg">
 					{contactInfo.map((c) => (
@@ -101,7 +102,7 @@ function Home() {
 								<dt>{c.label}</dt>
 								<dd>{c.content}</dd>
 							</dl>
-							<Separator />
+							{/*<Separator className="bg-black" />*/}
 						</div>
 					))}
 				</div>
