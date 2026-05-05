@@ -1,24 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Separator } from "#/components/ui/separator";
+import { contactInfo } from "#/lib/config";
 
 // TODO: Make desktop layout
 
 export const Route = createFileRoute("/")({ component: Home });
-
-const contactInfo = [
-	{
-		label: "TEL",
-		content: "0132 0232 00232",
-	},
-	{
-		label: "ADDRESS",
-		content: "Street 11. Place",
-	},
-	{
-		label: "OPENING HOUR",
-		content: "09:00 ~ 17:00",
-	},
-];
 
 function Home() {
 	return (
