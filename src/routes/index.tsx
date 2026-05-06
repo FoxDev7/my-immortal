@@ -10,7 +10,10 @@ function Home() {
 	return (
 		<div className="w-full overflow-auto md:w-[calc(100svw-14rem)] h-full">
 			{/* Hero section */}
-			<section className="relative w-full h-[calc(100svh-var(--header-h))] md:h-svh">
+			<section
+				id="home"
+				className="relative w-full h-[calc(100svh-var(--header-h))] md:h-svh"
+			>
 				<div className="h-full md:w-full text-center">
 					<img
 						src="https://images.unsplash.com/photo-1502217625004-89c03571bcca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8NXx8dGFpbG9yfGVufDB8fHx8MTc3NzgyNTExMnww&ixlib=rb-4.1.0&q=80&w=1080"
@@ -34,7 +37,10 @@ function Home() {
 			</section>
 
 			{/*	Introduction section */}
-			<section className="w-[calc(100%-var(--space-hor)*2)] flex flex-col gap-15 my-(--space-vrt) mx-auto md:max-w-full">
+			<section
+				id="about"
+				className="w-[calc(100%-var(--space-hor)*2)] flex flex-col gap-15 my-(--space-vrt) mx-auto md:max-w-full"
+			>
 				{/* Headline */}
 				{/*<div>
           <h1 className="flex text-2xl md:text-3xl">Änderungsschneiderei</h1>
@@ -74,14 +80,17 @@ function Home() {
 			</section>
 
 			{/* Contact Info */}
-			<section className="w-[calc(100%-var(--space-hor)*2)] flex flex-col gap-15 my-(--space-vrt) mx-auto">
+			<section
+				className="w-[calc(100%-var(--space-hor)*2)] flex flex-col gap-15 my-(--space-vrt) mx-auto"
+				id="contact"
+			>
 				<div>
 					<h2 className="flex flex-col items-center text-3xl">Contact</h2>
 				</div>
 
 				<Separator className="bg-dark-shadow md:hidden" />
 
-				<div className="flex flex-col gap-4 md:mx-auto   md:w-lg">
+				<div className="flex flex-col gap-4 md:mx-auto md:w-lg">
 					{contactInfo.map((c) => (
 						<div key={c.label}>
 							<dl className="flex justify-between">

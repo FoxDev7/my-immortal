@@ -55,9 +55,16 @@ export default function MobileNav({ className }: { className?: string }) {
 					<div className="flex flex-col gap-4">
 						<div className="flex flex-col gap-3">
 							{navItems.map((item) => (
-								<a href={`#${item.href}`} key={item.label} className="text-2xl">
-									{item.label}
-								</a>
+								<Button
+									variant="ghost"
+									className="mx-0 px-0 py-0 items-start justify-start font-normal"
+									key={item.label}
+									onClick={() => setOpen(false)}
+								>
+									<a href={`#${item.href}`} className="text-2xl">
+										{item.label}
+									</a>
+								</Button>
 							))}
 						</div>
 					</div>
