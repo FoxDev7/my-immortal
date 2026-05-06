@@ -19,13 +19,14 @@ export default function Header() {
 			{/* Desktop Nav */}
 			<header className="hidden md:flex flex-col items-center justify-between fixed right-0 w-52 h-svh gap-5 z-3 px-5 pt-25 pb-13 transition-[background-color] duration-300">
 				{/* Burger button */}
-				<div className="flex flex-col justify-center w-14">
+				{/* <div className="flex flex-col justify-center w-14">
 					<div className="w-full h-3.5 relative">
 						<span className="block absolute left-0 w-full h-px bg-black top-0"></span>
 						<span className="block absolute left-0 w-full h-px bg-black top-1/2"></span>
 						<span className="block absolute left-0 w-full h-px bg-black bottom-0"></span>
 					</div>
-				</div>
+				</div> */}
+				<MobileNav />
 
 				{/* Logo */}
 				<div>
