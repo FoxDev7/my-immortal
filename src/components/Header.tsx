@@ -1,3 +1,4 @@
+import MainNav from "./main-nav";
 import MobileNav from "./mobile-nav";
 
 export default function Header() {
@@ -26,7 +27,7 @@ export default function Header() {
 						<span className="block absolute left-0 w-full h-px bg-black bottom-0"></span>
 					</div>
 				</div> */}
-				<MobileNav />
+				<MainNav />
 
 				{/* Logo */}
 				<div>
