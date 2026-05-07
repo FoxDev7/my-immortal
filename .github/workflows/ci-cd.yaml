@@ -12,7 +12,7 @@ on:
       - synchronize
 
 jobs:
-  Lint:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,3 +33,16 @@ jobs:
         run: pnpm run lint --write
       - name: Check
         run: pnpm run check --write
+
+  deploy:
+    needs: lint
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v6.0.2
+      - name: Deploy
+        if: ${{ github.event_name == 'push' }}
+        uses: cloudflare/wrangler-action@v3.15.0
+        with:
+         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
