@@ -1,19 +1,5 @@
+import { navItems } from "#/lib/config";
 import { Separator } from "./ui/separator";
-
-const footerLinks = [
-	{
-		label: "Home",
-		href: "/",
-	},
-	{
-		label: "About",
-		href: "/",
-	},
-	{
-		label: "Contact",
-		href: "/",
-	},
-];
 
 const sns = [
 	{
@@ -37,7 +23,7 @@ export default function Footer() {
 				</a>
 
 				<div className="flex items-center gap-5 whitespace-nowrap">
-					{footerLinks.map((f) => (
+					{navItems.map((f) => (
 						<a
 							href={f.href}
 							key={f.label}
