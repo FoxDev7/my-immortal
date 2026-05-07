@@ -20,7 +20,7 @@ function Home() {
 						alt="Hero"
 						className="h-full object-cover md:w-full"
 					/>
-					<div className="w-full absolute text-center top-1/2 left-1/2 -translate-x-1/2 break-normal z-2 lg:w-5xl tracking-normal px-7">
+					<div className="w-full absolute text-center top-1/3 sm:top-1/2 left-1/2 -translate-x-1/2 break-normal z-2 lg:w-5xl tracking-normal px-7">
 						{/*<h1 className="inset-x-0 text-4xl text-primary-foreground text-center">
               Änderungsschneiderei
             </h1>*/}
